@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="brain.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eazy calculation</title>
+  </head>
+  <body>
+    <form onsubmit="return calc()">
+      <fieldset>
+        <legend>Try it Yourself! ❤️</legend>
+        <textarea id="display" readonly></textarea>
+        <div class="buttons">
+          <input type="button" value="%" onclick="append('%')" />
+          <input type="button" value="CE" onclick="clearEntry()" />
+          <input type="button" value="C" onclick="clearDisplay()" />
+          <input type="button" value="⬅" onclick="backspace()" />
+
+          <input type="button" value="1/x" onclick="invert()" />
+          <input type="button" value="x²" onclick="square()" />
+          <input type="button" value="√x" onclick="sqrt()" />
+          <input type="button" value="/" onclick="append('/')" />
+
+          <input type="button" value="7" onclick="append('7')" />
+          <input type="button" value="8" onclick="append('8')" />
+          <input type="button" value="9" onclick="append('9')" />
+          <input type="button" value="*" onclick="append('*')" />
+
+          <input type="button" value="4" onclick="append('4')" />
+          <input type="button" value="5" onclick="append('5')" />
+          <input type="button" value="6" onclick="append('6')" />
+          <input type="button" value="-" onclick="append('-')" />
+
+          <input type="button" value="1" onclick="append('1')" />
+          <input type="button" value="2" onclick="append('2')" />
+          <input type="button" value="3" onclick="append('3')" />
+          <input type="button" value="+" onclick="append('+')" />
+
+          <input type="button" value="00" onclick="append('00')" />
+          <input type="button" value="0" onclick="append('0')" />
+          <input type="button" value="." onclick="append('.')" />
+          <input type="submit" value="=" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
