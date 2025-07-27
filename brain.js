@@ -7,7 +7,6 @@ function append(value) {
   }
 
   function clearEntry() {
-    // Clear last number (optional behavior)
     const val = document.getElementById("display").value;
     document.getElementById("display").value = val.replace(/\d+$/, '');
   }
